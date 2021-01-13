@@ -1,15 +1,15 @@
 ---
 title: 'Storybook Vue 教程'
-tocTitle: '开始'
-description: '设置 Vue Storybook 在你的开发环境中'
+tocTitle: '开始上手'
+description: '在你的开发环境中设置 Vue Storybook'
 commit: '9e3165c'
 ---
 
-Storybook runs alongside your app in development mode. It helps you build UI components isolated from the business logic and context of your app. This edition of Learn Storybook is for Vue; other editions exist for [React](/react/en/get-started), [React Native](/react-native/en/get-started/), [Angular](/angular/en/get-started), [Svelte](/svelte/en/get-started) and [Ember](/ember/en/get-started).
+在开发模式下 Storybook 与你的应用程序一起运行。It helps you build UI components isolated from the business logic and context of your app. This edition of Learn Storybook is for Vue; other editions exist for [React](/react/en/get-started), [React Native](/react-native/en/get-started/), [Angular](/angular/en/get-started), [Svelte](/svelte/en/get-started) and [Ember](/ember/en/get-started).
 
 ![Storybook and your app](/intro-to-storybook/storybook-relationship.jpg)
 
-## Setup Vue Storybook
+## 设置 Vue Storybook
 
 We’ll need to follow a few steps to get the build process set up in your environment. To start with, we want to use the [Vue CLI](https://cli.vuejs.org) to setup our build system, and enable [Storybook](https://storybook.js.org/) and [Jest](https://facebook.github.io/jest/) testing in our created app. Let’s run the following commands:
 
@@ -47,7 +47,7 @@ Our three frontend app modalities: automated test (Jest), component development 
 
 Depending on what part of the app you’re working on, you may want to run one or more of these simultaneously. Since our current focus is creating a single UI component, we’ll stick with running Storybook.
 
-## Reuse CSS
+## 重用 CSS
 
 Taskbox reuses design elements from the GraphQL and React Tutorial [example app](https://www.chromatic.com/blog/graphql-react-tutorial-part-1-6), so we won’t need to write CSS in this tutorial. Copy and paste [this compiled CSS](https://github.com/chromaui/learnstorybook-code/blob/master/src/index.css) into `src/index.css` and then import the CSS into the app by editing the `<style>` tag in `src/App.vue` so it looks like:
 
@@ -65,7 +65,7 @@ Taskbox reuses design elements from the GraphQL and React Tutorial [example app]
 If you want to modify the styling, the source LESS files are provided <a href="https://github.com/chromaui/learnstorybook-code/tree/master/src/style">here</a>.
 </div>
 
-## Add assets
+## 添加 assets
 
 To match the intended design, you'll need to download both the font and icon directories and place its contents inside your `src/assets` folder. Issue the following commands in your terminal:
 
@@ -90,7 +90,7 @@ We also need to update our storybook script to serve the `public` directory (in 
 
 After adding styling and assets, the app will render a bit strangely. That’s OK. We aren’t working on the app right now. We’re starting off with building our first component!
 
-## Commit changes
+## Commit 变更
 
 When our project was initialized, Vue CLI already created a local repository for us. At this stage it's safe to add our files to the first commit.
 
@@ -106,4 +106,4 @@ Followed by:
 $ git commit -m "first commit"
 ```
 
-Let's start building our first component!
+让我们开始构建我们的第一个组件！
